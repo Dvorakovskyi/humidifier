@@ -9,7 +9,7 @@ export const StyledHeader = styled.header`
   margin-left: auto;
   margin-right: auto;
   padding: 5px 10px;
-  width: 460px;
+  width: 380px;
 
   background-color: ${colors.mainBgColor};
 `;

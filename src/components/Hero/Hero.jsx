@@ -8,7 +8,7 @@ const Hero = () => {
       <StyledMainTitle>
         Термос ТермоТріо 500мл із датчиком температури
       </StyledMainTitle>
-      <img src={mainPhoto} alt="Термос" width="480"/>
+      <img src={mainPhoto} alt="Термос" width="400"/>
     </>
   );
 };
