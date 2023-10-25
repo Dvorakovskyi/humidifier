@@ -13,6 +13,5 @@ background-color: ${colors.mainBgColor}; */
 `;
 
 export const StyledHeroImg = styled.img`
-  min-width: 320px;
-  max-width: 460px;
+  max-width: 100%;
 `;
