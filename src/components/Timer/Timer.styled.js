@@ -8,7 +8,7 @@ export const StyledTimerWrapper = styled.div`
   flex-direction: column;
   padding: 10px 0;
 
-  border: 1px solid ${colors.secondaryTextColor};
+  background-color: ${colors.mainBgColor};
 `;
 
 export const StyleTimerText = styled.span`
@@ -17,7 +17,7 @@ export const StyleTimerText = styled.span`
   line-height: 16px;
   font-weight: 500;
 
-  color: ${colors.secondaryTextColor};
+  color: #99958b;
 `;
 
 export const StyledDiv = styled.div`
