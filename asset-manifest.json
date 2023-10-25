@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/humidifier/static/css/main.64958716.css",
-    "main.js": "/humidifier/static/js/main.f1d7d564.js",
+    "main.css": "/humidifier/static/css/main.fe8102cf.css",
+    "main.js": "/humidifier/static/js/main.6bfde657.js",
     "static/media/mainPhoto.png": "/humidifier/static/media/mainPhoto.c32a9c9e6c94b3abe38f.png",
     "index.html": "/humidifier/index.html",
-    "main.64958716.css.map": "/humidifier/static/css/main.64958716.css.map",
-    "main.f1d7d564.js.map": "/humidifier/static/js/main.f1d7d564.js.map"
+    "main.fe8102cf.css.map": "/humidifier/static/css/main.fe8102cf.css.map",
+    "main.6bfde657.js.map": "/humidifier/static/js/main.6bfde657.js.map"
   },
   "entrypoints": [
-    "static/css/main.64958716.css",
-    "static/js/main.f1d7d564.js"
+    "static/css/main.fe8102cf.css",
+    "static/js/main.6bfde657.js"
   ]
 }
