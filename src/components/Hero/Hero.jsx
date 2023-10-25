@@ -1,6 +1,6 @@
 import React from 'react';
 import mainPhoto from '../../images/hero/mainPhoto.png';
-import { StyledMainTitle } from './Hero.styled';
+import { StyledMainTitle, StyledHeroImg } from './Hero.styled';
 
 const Hero = () => {
   return (
@@ -8,7 +8,7 @@ const Hero = () => {
       <StyledMainTitle>
         Термос ТермоТріо 500мл із датчиком температури
       </StyledMainTitle>
-      <img src={mainPhoto} alt="Термос" width="400"/>
+      <StyledHeroImg src={mainPhoto} alt="Термос"/>
     </>
   );
 };
