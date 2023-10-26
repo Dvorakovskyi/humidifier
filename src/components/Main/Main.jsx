@@ -9,6 +9,8 @@ import Modal from 'components/Modal/Modal';
 import SecondDescription from 'components/SecondDescription/SecondDescription';
 import Benefits from 'components/Benefits/Benefits';
 import Img from 'components/Img/Img';
+import Video from 'components/Video/Video';
+import Delivery from 'components/Delivery/Delivery';
 import { StyledMain } from './Main.styled';
 
 const Main = () => {
@@ -37,7 +39,10 @@ const Main = () => {
       <Remainder />
       <SecondDescription />
       <Benefits />
+      <Button openModal={handleOpenModal} />
       <Img />
+      <Video />
+      <Delivery />
     </StyledMain>
   );
 };
