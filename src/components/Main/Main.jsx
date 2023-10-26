@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import Hero from 'components/Hero/Hero';
 import Price from 'components/Price/Price';
 import Description from 'components/Description/Description';
@@ -16,6 +17,7 @@ import { StyledMain } from './Main.styled';
 
 const Main = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isNotificationShown, setIsNotificationShown] = useState(false);
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -28,6 +30,18 @@ const Main = () => {
 
     document.body.classList.remove('no-scroll');
   };
+
+  useEffect(() => {
+    if (!isNotificationShown) {
+      const timer = setTimeout(() => {
+        Notify.info('Олексій зробив замовлення, залишилось 11 штук');
+
+        setIsNotificationShown(true);
+      }, 30000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [isNotificationShown]);
 
   return (
     <StyledMain>
@@ -49,6 +63,7 @@ const Main = () => {
       <Price />
       <Timer />
       <Button openModal={handleOpenModal} />
+      <Remainder />
     </StyledMain>
   );
 };
