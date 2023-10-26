@@ -9,6 +9,7 @@ const Video = () => {
       <StyledSecTitle>Відеоогляд</StyledSecTitle>
       <StyledVideoWrapper>
         <iframe
+          title='Відеоогляд'
           src="https://www.youtube.com/embed/vkcnkDuZ_cA"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
