@@ -17,7 +17,7 @@ export const StyledModal = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 40px;
+  padding: 60px 40px;
   max-width: 460px;
   overflow: hidden;
 

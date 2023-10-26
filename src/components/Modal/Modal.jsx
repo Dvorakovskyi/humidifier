@@ -11,7 +11,7 @@ const Modal = ({ closeModal }) => {
   return (
     <StyledBackdrop onClick={closeModal}>
       <StyledModal onClick={handleModalClick}>
-        <Form/>
+        <Form closeModal={closeModal} />
       </StyledModal>
     </StyledBackdrop>
   );

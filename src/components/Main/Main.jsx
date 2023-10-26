@@ -6,6 +6,7 @@ import Timer from 'components/Timer/Timer';
 import Button from 'components/Button/Button';
 import Remainder from 'components/Remainder/Remainder';
 import Modal from 'components/Modal/Modal';
+import SecondDescription from 'components/SecondDescription/SecondDescription';
 import { StyledMain } from './Main.styled';
 
 const Main = () => {
@@ -32,6 +33,7 @@ const Main = () => {
       <Button openModal={handleOpenModal} />
       {isModalOpen && <Modal closeModal={handleCloseModal} />}
       <Remainder />
+      <SecondDescription/>
     </StyledMain>
   );
 };

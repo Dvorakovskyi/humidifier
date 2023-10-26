@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import PropTypes from 'prop-types';
+import iconClose from '../../images/form/iconClose.svg';
 import {
   StyledInput,
   StyledSelect,
   StyledFormBtn,
   StyledForm,
+  StyledIconClose,
 } from './Form.styled';
 
-const Form = () => {
+const Form = ({ closeModal }) => {
   const [color, setColor] = useState('');
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
@@ -15,10 +18,9 @@ const Form = () => {
   const handleChange = event => {
     const { name, value } = event.currentTarget;
 
-    setColor(event.currentTarget.value);
-
     name === 'name' && setName(value);
     name === 'phone' && setPhone(value);
+    name === 'color' && setColor(value);
   };
 
   const handleSubmitForm = event => {
@@ -32,6 +34,8 @@ const Form = () => {
 
     console.log({ color, name, phone });
 
+    closeModal();
+
     reset();
   };
 
@@ -43,7 +47,7 @@ const Form = () => {
 
   return (
     <StyledForm onSubmit={handleSubmitForm}>
-      <StyledSelect onChange={handleChange}>
+      <StyledSelect name="color" onChange={handleChange}>
         <option value="">Оберіть колір</option>
         <option value="Чорний">Чорний</option>
         <option value="Синій">Синій</option>
@@ -62,8 +66,13 @@ const Form = () => {
         onChange={handleChange}
       />
       <StyledFormBtn type="submit">Замовити</StyledFormBtn>
+      <StyledIconClose src={iconClose} alt="Icon Close" onClick={closeModal} />
     </StyledForm>
   );
 };
 
 export default Form;
+
+Form.propTypes = {
+  closeModal: PropTypes.func.isRequired,
+};

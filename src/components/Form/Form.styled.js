@@ -34,7 +34,7 @@ export const StyledSelect = styled.select`
 
 export const StyledFormBtn = styled.button`
   display: block;
-  margin: 10px auto;
+  margin: 20px auto 0 auto;
   padding: 10px 30px;
   font-weight: 400;
   font-size: 14px;
@@ -52,4 +52,10 @@ export const StyledFormBtn = styled.button`
   &:focus {
     background-color: ${colors.focusColor};
   }
+`;
+
+export const StyledIconClose = styled.img`
+  position: absolute;
+  top: 10px;
+  right: 10px;
 `;
