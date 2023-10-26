@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <StyledMainTitle>
-        Термос ТермоТріо 500мл із датчиком температури
+        Термос TermoComfort 500мл із датчиком температури
       </StyledMainTitle>
       <StyledHeroImg src={mainPhoto} alt="Термос"/>
     </>

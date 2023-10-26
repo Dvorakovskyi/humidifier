@@ -7,6 +7,8 @@ import Button from 'components/Button/Button';
 import Remainder from 'components/Remainder/Remainder';
 import Modal from 'components/Modal/Modal';
 import SecondDescription from 'components/SecondDescription/SecondDescription';
+import Benefits from 'components/Benefits/Benefits';
+import Img from 'components/Img/Img';
 import { StyledMain } from './Main.styled';
 
 const Main = () => {
@@ -33,7 +35,9 @@ const Main = () => {
       <Button openModal={handleOpenModal} />
       {isModalOpen && <Modal closeModal={handleCloseModal} />}
       <Remainder />
-      <SecondDescription/>
+      <SecondDescription />
+      <Benefits />
+      <Img />
     </StyledMain>
   );
 };

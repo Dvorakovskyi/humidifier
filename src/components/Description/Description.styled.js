@@ -3,6 +3,7 @@ import { colors } from 'styles/globalStyles';
 
 export const StyledSection = styled.section`
   margin-top: 10px;
+  padding: 10px;
   min-width: 320px;
   max-width: 480px;
 `;
