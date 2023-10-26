@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/humidifier/static/css/main.d6bc4d3b.css",
-    "main.js": "/humidifier/static/js/main.7b76051b.js",
+    "main.css": "/humidifier/static/css/main.8e499750.css",
+    "main.js": "/humidifier/static/js/main.94533bb2.js",
     "static/media/mainPhoto.png": "/humidifier/static/media/mainPhoto.c32a9c9e6c94b3abe38f.png",
     "static/media/desc.jpg": "/humidifier/static/media/desc.d2f51b246db02aa4449c.jpg",
+    "static/media/red.jpg": "/humidifier/static/media/red.de0fa8d7d171517a3546.jpg",
     "static/media/secDesc.jpg": "/humidifier/static/media/secDesc.b91c4c61000d2d4653b9.jpg",
+    "static/media/car.jpg": "/humidifier/static/media/car.8a25101f0ec3f772450b.jpg",
+    "static/media/img.jpg": "/humidifier/static/media/img.4841525648992de5a0e3.jpg",
     "index.html": "/humidifier/index.html",
     "static/media/iconClose.svg": "/humidifier/static/media/iconClose.f3cbdd58dc25ca7cbb3d242106b56fb9.svg",
-    "main.d6bc4d3b.css.map": "/humidifier/static/css/main.d6bc4d3b.css.map",
-    "main.7b76051b.js.map": "/humidifier/static/js/main.7b76051b.js.map"
+    "main.8e499750.css.map": "/humidifier/static/css/main.8e499750.css.map",
+    "main.94533bb2.js.map": "/humidifier/static/js/main.94533bb2.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6bc4d3b.css",
-    "static/js/main.7b76051b.js"
+    "static/css/main.8e499750.css",
+    "static/js/main.94533bb2.js"
   ]
 }
