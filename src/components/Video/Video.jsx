@@ -14,8 +14,8 @@ const Video = () => {
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          width="450"
-          height="300"
+          width="430"
+          height="280"
         ></iframe>
       </StyledVideoWrapper>
     </StyledSection>
