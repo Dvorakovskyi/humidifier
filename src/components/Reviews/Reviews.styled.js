@@ -14,6 +14,7 @@ export const StyledReviewsSection = styled(StyledSection)`
 `;
 
 export const StyledRevSecTitle = styled(StyledSecTitle)`
+  margin-bottom: 15px;
   color: ${colors.mainTextColor};
 `;
 
