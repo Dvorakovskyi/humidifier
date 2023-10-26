@@ -11,6 +11,7 @@ import Benefits from 'components/Benefits/Benefits';
 import Img from 'components/Img/Img';
 import Video from 'components/Video/Video';
 import Delivery from 'components/Delivery/Delivery';
+import Reviews from 'components/Reviews/Reviews';
 import { StyledMain } from './Main.styled';
 
 const Main = () => {
@@ -43,6 +44,11 @@ const Main = () => {
       <Img />
       <Video />
       <Delivery />
+      <Reviews />
+      <Hero />
+      <Price />
+      <Timer />
+      <Button openModal={handleOpenModal} />
     </StyledMain>
   );
 };

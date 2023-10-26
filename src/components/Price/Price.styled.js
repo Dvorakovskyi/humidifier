@@ -5,6 +5,7 @@ export const StyledWrapper = styled.div`
   position: relative;
   display: flex;
   justify-content: space-between;
+  margin-top: 5px;
   min-width: 320px;
   max-width: 480px;
 `;
