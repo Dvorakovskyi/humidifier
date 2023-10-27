@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { newOrder } from 'api/CRM';
+import { telegramOrder } from 'api/telegramApi';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import PropTypes from 'prop-types';
 import iconClose from '../../images/form/iconClose.svg';
@@ -38,7 +38,11 @@ const Form = ({ closeModal }) => {
 
     console.log({ color, name, phone });
 
-    newOrder(name, phone, color);
+    let message = `Ім'я: ${name}\n`;
+    message += `Телефон: ${phone}\n`;
+    message += `Колір ${color}`;
+
+    telegramOrder(message);
 
     navigate('/thanks');
 
