@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { newOrder } from 'api/CRM';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import PropTypes from 'prop-types';
 import iconClose from '../../images/form/iconClose.svg';
@@ -14,6 +16,8 @@ const Form = ({ closeModal }) => {
   const [color, setColor] = useState('');
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
+
+  const navigate = useNavigate();
 
   const handleChange = event => {
     const { name, value } = event.currentTarget;
@@ -34,16 +38,20 @@ const Form = ({ closeModal }) => {
 
     console.log({ color, name, phone });
 
+    newOrder(name, phone, color);
+
+    navigate('/thanks');
+
     closeModal();
 
-    reset();
+
   };
 
-  const reset = () => {
-    setColor('');
-    setName('');
-    setPhone('');
-  };
+  // const reset = () => {
+  //   setColor('');
+  //   setName('');
+  //   setPhone('');
+  // };
 
   return (
     <StyledForm onSubmit={handleSubmitForm}>

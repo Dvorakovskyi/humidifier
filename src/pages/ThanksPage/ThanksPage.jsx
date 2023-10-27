@@ -1,9 +1,8 @@
-import React from "react";
+import React from 'react';
+import Thanks from 'components/Thanks/Thanks';
 
 const ThanksPage = () => {
-    return (
-        <div>ThanksPage</div>
-    )
+  return <Thanks />;
 };
 
 export default ThanksPage;

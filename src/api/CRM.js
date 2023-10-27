@@ -1,10 +1,19 @@
 import axios from 'axios';
 
 const BASE_URL = 'http://allgoodsbazaar.lp-crm.biz/api/addNewOrder.html';
-const API_KEY = 'badb711cc1aeed31c0a43d20d9697d28';
-const country = 'UA';
-const products = ['Термос'];
 
 export const newOrder = (name, phone, color) => {
-    
-}
+  const data = {
+    key: 'a46094a46f4b97d3df84a4aed7e5f84e',
+    order_id: String(Math.round(Date.now() * 10)),
+    country: 'UA',
+    products: ['Термос'],
+    bayer_name: name,
+    phone,
+    comment: color,
+  };
+
+  const response = axios.post(BASE_URL, data);
+
+  return response.data;
+};
