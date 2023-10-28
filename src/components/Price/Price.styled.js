@@ -45,10 +45,12 @@ export const StyledDiscount = styled.div`
 
 export const StyledDiscText = styled.p`
   margin-bottom: 5px;
+  width: 65px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 500;
   letter-spacing: 8px;
+  text-align: center;
 
   color: ${colors.mainTextColor};
 `;
@@ -57,6 +59,7 @@ export const StyledDiscNumber = styled.p`
   font-weight: 700;
   font-size: 34px;
   line-height: 34px;
+  text-align: center;
 
   color: ${colors.mainTextColor};
 `;

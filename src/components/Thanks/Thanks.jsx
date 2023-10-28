@@ -3,13 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import {
   StyledThkText,
   StyledThkSection,
-    StyledThkTitle,
-  StyledThkBtn
+  StyledThkTitle,
+  StyledThkBtn,
 } from './Thanks.styled';
 
 const Thanks = () => {
   const navigate = useNavigate();
-  
+
   return (
     <StyledThkSection>
       <StyledThkTitle>Дякуємо за замовлення!</StyledThkTitle>
@@ -22,7 +22,9 @@ const Thanks = () => {
         onClick={() => {
           navigate('/');
         }}
-      >Повернутись назад</StyledThkBtn>
+      >
+        Повернутись назад
+      </StyledThkBtn>
     </StyledThkSection>
   );
 };
