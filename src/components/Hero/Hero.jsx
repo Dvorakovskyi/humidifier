@@ -1,7 +1,15 @@
 import React from 'react';
 import mainPhoto from '../../images/hero/mainPhoto.png';
-import benefitsImg from '../../images/hero/benefits.jpg';
-import { StyledMainTitle, StyledHeroImg } from './Hero.styled';
+import icon1 from '../../images/hero/icon1.png';
+import icon2 from '../../images/hero/icon2.png';
+import icon3 from '../../images/hero/icon3.png';
+import {
+  StyledMainTitle,
+  StyledHeroImg,
+  StyledHeroItem,
+  StyledHeroList,
+  StyledItemText,
+} from './Hero.styled';
 
 const Hero = () => {
   return (
@@ -10,7 +18,20 @@ const Hero = () => {
         Термос TermoComfort 500мл із датчиком температури
       </StyledMainTitle>
       <StyledHeroImg src={mainPhoto} alt="Термос" />
-      <StyledHeroImg src={benefitsImg} alt="Переваги" />
+      <StyledHeroList>
+        <StyledHeroItem>
+          <img src={icon1} alt="icon" width="30" height="30" />
+          <StyledItemText>Зручність та якість</StyledItemText>
+        </StyledHeroItem>
+        <StyledHeroItem>
+          <img src={icon2} alt="icon" width="30" height="30" />
+          <StyledItemText>Швидка доставка</StyledItemText>
+        </StyledHeroItem>
+        <StyledHeroItem>
+          <img src={icon3} alt="icon" width="30" height="30" />
+          <StyledItemText>Оплата при отриманні</StyledItemText>
+        </StyledHeroItem>
+      </StyledHeroList>
     </>
   );
 };
