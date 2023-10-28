@@ -23,7 +23,7 @@ const Form = ({ closeModal }) => {
     const { name, value } = event.currentTarget;
 
     name === 'name' && setName(value);
-    name === 'phone' && setPhone(value);
+    name === 'phone' && setPhone(Number(value));
     name === 'color' && setColor(value);
   };
 
@@ -36,7 +36,11 @@ const Form = ({ closeModal }) => {
       return;
     }
 
-    console.log({ color, name, phone });
+    if (isNaN(phone)) {
+      Notify.failure('Введіть, будь ласка, правильний номер');
+
+      return;
+    }
 
     let message = `Ім'я: ${name}\n`;
     message += `Телефон: ${phone}\n`;
@@ -47,8 +51,6 @@ const Form = ({ closeModal }) => {
     navigate('/thanks');
 
     closeModal();
-
-
   };
 
   // const reset = () => {
