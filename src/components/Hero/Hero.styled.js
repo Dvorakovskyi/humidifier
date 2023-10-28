@@ -17,7 +17,7 @@ export const StyledHeroList = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 20px;
+  padding: 8px 20px;
   min-width: 320px;
 
   background-color: ${colors.mainBgColor};
